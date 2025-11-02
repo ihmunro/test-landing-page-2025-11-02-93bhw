@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test Landing Page - Simple test page showcasing modern features and benefits">
+    <meta name="keywords" content="test, landing page, modern, features">
+    <meta name="author" content="Test Landing Page">
+    <meta property="og:title" content="Test Landing Page">
+    <meta property="og:description" content="Simple test page">
+    <meta property="og:type" content="website">
+    <title>Test Landing Page | Simple Test Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hover-lift {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">T</span>
+                </div>
+                <span class="text-xl font-bold text-gray-900">TestPage</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Features</a>
+                <a href="#benefits" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">About</a>
+                <a href="https://example.com" class="px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg hover:scale-105 transition-all duration-300">Get Started</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden mobile-menu-button p-2 text-gray-700 hover:text-blue-600 transition-colors duration-300" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-white shadow-lg md:hidden">
+                <div class="flex flex-col space-y-4 px-4 py-6">
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">About</a>
+                    <a href="https://example.com" class="px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300 text-center">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-blue-50 to-purple-50 overflow-hidden">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+            <div class="space-y-8">
+                <div class="inline-block px-4 py-2 bg-blue-100 rounded-full">
+                    <span class="text-blue-600 font-semibold text-sm tracking-wide uppercase">Welcome to Innovation</span>
+                </div>
+
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight tracking-tight">
+                    Test Landing Page
+                </h1>
+
+                <p class="text-xl sm:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Simple test page showcasing powerful features and comprehensive benefits designed to elevate your experience and drive meaningful results.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+                    <a href="https://example.com" class="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-flex items-center justify-center space-x-2">
+                        <span>Get Started Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#features" class="px-8 py-4 bg-white border-2 border-gray-300 text-gray-900 rounded-lg font-bold text-lg hover:border-blue-600 hover:text-blue-600 hover:shadow-lg transition-all duration-300 inline-flex items-center justify-center space-x-2">
+                        <span>Learn More</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+
+                <div class="pt-12 flex justify-center items-center space-x-8 text-gray-600">
+                    <div class="text-center">
+                        <p class="text-3xl font-bold text-gray-900">10K+</p>
+                        <p class="text-sm">Active Users</p>
+                    </div>
+                    <div class="w-px h-12 bg-gray-300"></div>
+                    <div class="text-center">
+                        <p class="text-3xl font-bold text-gray-900">98%</p>
+                        <p class="text-sm">Satisfaction Rate</p>
+                    </div>
+                    <div class="w-px h-12 bg-gray-300"></div>
+                    <div class="text-center">
+                        <p class="text-3xl font-bold text-gray-900">24/7</p>
+                        <p class="text-sm">Support Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+                    Powerful Features at Your Fingertips
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Discover the comprehensive suite of features designed to streamline your workflow and maximize productivity with intelligent, user-centric solutions.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="hover-lift bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+                    <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-rocket text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Feature 1</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Experience lightning-fast performance with our cutting-edge optimization technology. Our Feature 1 delivers exceptional speed and reliability, ensuring your operations run smoothly without interruption. Built with scalability in mind, it grows with your business needs.
+                    </p>
+                    <a href="#" class="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300 inline-flex items-center space-x-2">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="hover-lift bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Feature 2</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Security is paramount with our enterprise-grade protection mechanisms. Feature 2 employs advanced encryption and multi-layer authentication to safeguard your sensitive data. Rest assured knowing your information is protected by industry-leading security standards and continuous monitoring.
+                    </p>
+                    <a href="#" class="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300 inline-flex items-center space-x-2">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="hover-lift bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+                    <div class="w-14 h-14 bg-gradient-to-br from-pink-500 to-pink-600 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Feature 3</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Gain actionable insights with our comprehensive analytics dashboard. Feature 3 provides real-time data visualization and detailed reporting capabilities, enabling you to make informed decisions quickly. Transform raw data into strategic intelligence that drives business growth.
+                    </p>
+                    <a href="#" class="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300 inline-flex items-center space-x-2">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+                    Transformative Benefits for Your Success
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Unlock unprecedented value and drive measurable improvements across all aspects of your operations and business outcomes.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Benefit 1 -->
+                <div class="flex gap-6 bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-blue-100">
+                            <i class="fas fa-clock text-blue-600 text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Save Up to 70% of Your Time</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Automate repetitive tasks and streamline your workflow, allowing your team to focus on high-impact strategic initiatives. Our intelligent automation reduces manual effort significantly, enabling you to accomplish more in less time while maintaining exceptional quality standards.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="flex gap-6 bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-purple-100">
+                            <i class="fas fa-dollar-sign text-purple-600 text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Reduce Operational Costs by 50%</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Optimize resource allocation and eliminate wasteful spending with our intelligent cost management system. Experience substantial savings across infrastructure, personnel, and operational expenses while improving overall efficiency and profitability metrics.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="flex gap-6 bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-pink-100">
+                            <i class="fas fa-users text-pink-600 text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Enhance Team Collaboration</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Foster seamless communication and collaboration across departments with integrated tools designed for modern teams. Break down silos, improve transparency, and create a unified work environment where creativity and innovation flourish naturally.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="flex gap-6 bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-green-100">
+                            <i class="fas fa-trending-up text-green-600 text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Accelerate Growth and Revenue</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Unlock new revenue streams and expand market opportunities with data-driven insights and strategic recommendations. Scale your business efficiently while maintaining quality, customer satisfaction, and sustainable long-term growth trajectories.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background Image -->
+    <section class="relative py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop');">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-purple-600/90"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12">
+            <h2 class="text-4xl sm:text-5xl font-bold text-white mb-6">
+                Ready to Transform Your Business?
+            </h2>
+            <p class="text-xl text-white/90 mb-8 leading-relaxed">
+                Join thousands of satisfied customers who have revolutionized their operations and achieved remarkable results. Start your journey to success today with our comprehensive platform.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://example.com" class="px-8 py-4 bg-white text-blue-600 rounded-lg font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-flex items-center justify-center space-x-2">
+                    <span>Get Started Free</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#" class="px-8 py-4 bg-white/20 border-2 border-white text-white rounded-lg font-bold text-lg hover:bg-white/30 transition-all duration-300 inline-flex items-center justify-center space-x-2 backdrop-blur-sm">
+                    <span>Schedule Demo</span>
+                    <i class="fas fa-calendar"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+                    Trusted by Industry Leaders
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Discover why thousands of companies choose our platform and achieve exceptional results. Read what our satisfied customers have to say.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="hover-lift bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl border border-blue-100 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        "This platform has completely revolutionized how we manage our operations. The intuitive interface and powerful features have helped us reduce processing time by 65% while improving accuracy. Our team loves the seamless collaboration tools, and customer support has been exceptional. Highly recommended!"
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                            SJ
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Sarah Johnson</p>
+                            <p class="text-sm text-gray-600">Operations Director, TechCorp Inc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="hover-lift bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl border border-purple-100 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        "Outstanding value for money. We've implemented this solution across our entire organization and seen immediate improvements in productivity and cost savings. The analytics dashboard provides insights we never had before, enabling better decision-making."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                            MC
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Michael Chen</p>
+                            <p class="text-sm text-gray-600">CFO, Global Finance Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="hover-lift bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-2xl border border-green-100 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        "The best investment we've made this year. Implementation was smooth, training was comprehensive, and the ROI has exceeded our expectations. Our customer satisfaction scores have improved significantly, and our team is much happier with their workflows."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center text-white font-bold">
+                            ER
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Emily Rodriguez</p>
+                            <p class="text-sm text-gray-600">CEO, Customer Success Pro</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="hover-lift bg-gradient-to-br from-yellow-50 to-orange-50 p-8 rounded-2xl border border-yellow-100 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        "Exceptional platform with outstanding support. We've scaled from 50 to 500 users without any performance issues. The security features give us peace of mind, and the regular updates show the team is committed to continuous improvement. Five stars!"
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-600 rounded-full flex items-center justify-center text-white font-bold">
+                            DK
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">David Kim</p>
+                            <p class="text-sm text-gray-600">VP of Technology, StartUp Ventures</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+                    About Our Company
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Discover our story, mission, and commitment to excellence
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-8 sm:p-12 space-y-8">
+                <div>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Founded in 2015, our company emerged from a simple yet powerful vision: to revolutionize how organizations manage their operations through intelligent, user-centric technology. What started as a small team of passionate engineers and visionaries has grown into a thriving organization serving thousands of customers worldwide. Our journey has been marked by continuous innovation, unwavering commitment to quality, and a deep understanding of our customers' evolving needs. Today, we stand as an industry leader, recognized for delivering transformative solutions that drive real business impact and sustainable growth.
+                    </p>
+                </div>
+
+                <div class="border-t border-gray-200 pt-8">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Our core mission is to empower businesses of all sizes with cutting-edge technology that simplifies complexity and unlocks untapped potential. We believe in fostering a culture of innovation, collaboration, and continuous learning where our team members can thrive and make meaningful contributions. We are committed to maintaining the highest standards of integrity, transparency, and customer-centricity in everything we do. Our core values—excellence, innovation, trust, and impact—guide our decisions and shape our relationships with customers, partners, and our community. We are dedicated to not only delivering exceptional products but also creating lasting partnerships that drive mutual success and sustainable value creation.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 pt-8 border-t border-gray-200">
+                    <div class="text-center">
+                        <p class="text-3xl font-bold text-blue-600">500+</p>
+                        <p class="text-gray-600 text-sm mt-2">Team Members</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-3xl font-bold text-purple-600">150+</p>
+                        <p class="text-gray-600 text-sm mt-2">Countries Served</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-3xl font-bold text-pink-600">10 Years</p>
+                        <p class="text-gray-600 text-sm mt-2">Industry Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+                Have Questions?
+            </h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Get in touch with our team. We're here to help and answer any questions you might have.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
+                <a href="mailto:test@example.com" class="flex items-center space-x-3 text-lg text-gray-700 hover:text-blue-600 transition-colors duration-300">
+                    <i class="fas fa-envelope text-2xl"></i>
+                    <span class="font-semibold">test@example.com</span>
+                </a>
+                <div class="hidden sm:block w-px h-8 bg-gray-300"></div>
+                <a href="https://example.com" class="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-bold hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold">T</span>
+                        </div>
+                        <span class="text-xl font-bold text-white">TestPage</span>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Transforming businesses through innovative technology solutions and exceptional customer service.
+                    </p>
+                </div>
+
+                <!-- Product Links -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Product</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Security</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Links -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Links and Copyright -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        &copy; 2025 TestPage. All rights reserved. | Designed with <i class="fas fa-heart text-red-500"></i> for excellence.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-xl" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-xl" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-pink-400 transition-colors duration-300 text-xl" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-xl" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle (if FAQ section exists)
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
